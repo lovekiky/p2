@@ -1,0 +1,346 @@
+body{
+    font-family:"philosopher";
+    margin:0px;
+    background-color: rgb(117, 46, 26);
+
+
+}
+.nav{
+   background-color:rgb(170, 85, 61,.1);
+   padding: 10px;
+   position:fixed;
+    right:0; 
+    margin-right:30px;
+    transition: background-color 0.5s;
+    color:rgb(170, 85, 61,0.3);
+}
+.nav:hover{
+    background-color:rgba(13, 3, 0, 0.4);
+
+}
+/*a:hover p{
+    color:blanchedalmond;
+} i want the text to lighten same as the box does*/
+a:link, a:visited{
+    text-decoration: none;
+    color: rgb(170, 85, 61);
+}
+#home{
+    background-color: rgb(117, 46, 26)
+}
+.homegrid{
+    display:grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(10, 100px);
+    gap: 1rem;
+}
+    .vertical{
+        background-color:rgb(170, 85, 61);
+        grid-column: 2/3;
+        grid-row: 1/10;
+        text-orientation: mixed;
+        writing-mode: vertical-rl;  
+        text-indent: 100px;
+
+    }
+    .vertical h1{
+        font-size: 125px;
+        display: inline;
+        font-weight:normal;
+        line-height:0.25;
+        color: rgb(71, 25, 12);
+    }
+    .vertical h6{
+        line-height:40pt;
+
+    }
+    .large_p{
+        grid-column: 3/7;
+        grid-row: 3/7;
+        font-size: 500px;
+        line-height: .5;
+        margin-left: 10px;
+        animation-name: home_p;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+    }
+    @keyframes home_p{
+        0% {color: rgb(71, 25, 12); }
+        50% {color: rgb(235, 115, 88); }
+        100% {color: rgb(71, 25, 12); }
+    }
+    .large_p h1{
+        display: inline;
+        font-weight: normal;
+    }
+    .introduction{
+        background-color:rgba(227, 114, 83, 0.5);
+        grid-column: 4/9;
+        grid-row: 6/10;
+        padding: 100px;
+
+    }
+    
+
+#characterset{
+    background-color: rgb(214, 161, 138);
+    padding-bottom: 200px;
+} 
+#characterset h1{
+font-size:100px;
+display:inline;
+line-height:130%;
+text-shadow: 4px 4px rgb(170, 85, 61,0.5);
+}
+.chargrid{
+    padding-top: 100px;
+    display:grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(10, 100px);
+    gap: 1rem;
+
+}
+    .cap_alphabet{
+        line-height:150px;
+        letter-spacing:10px ;
+        grid-column:1/10 ;
+        grid-row:1/2 ;
+        text-align:center;
+    }
+    .AtoE{
+        background-color:rgb(170, 85, 61,.5);
+        grid-column:1/10 ;
+        grid-row:2/3 ;
+        text-align:center;
+    }
+    .low_alphabet{
+        line-height:150px;
+        letter-spacing:10px ;
+        grid-column:1/10 ;
+        grid-row: 3/4;
+        text-align:center;
+    }
+    .FtoK{
+        background-color:rgb(170, 85, 61,.5);
+        grid-column: 1/10;
+        grid-row: 4/5;
+        text-align:center;
+    }
+    .numbers{
+        line-height:150px;
+        letter-spacing:10px ;
+        grid-column:3/7 ;
+        grid-row: 5/6;
+        text-align:center;
+    }
+    .LtoP{
+        background-color:rgb(170, 85, 61,.5);
+        grid-column:1/10 ;
+        grid-row: 6/7;
+        text-align:center;
+    }
+    .glyphs{
+        line-height:150px;
+        letter-spacing:10px ;
+        grid-column:3/7 ;
+        grid-row: 7/8;
+        text-align:center;
+    }
+    .QtoR{
+        background-color:rgb(170, 85, 61,.5);
+        grid-column: 1/10;
+        grid-row: 8/9;
+        text-align:center;
+    }
+    .VtoZ{
+        background-color:rgb(170, 85, 61,.5);
+        grid-column: 1/10;
+        grid-row: 10/11;
+        text-align:center;
+    }
+
+
+
+    .displaygrid{
+        padding-top:100px;
+        display: grid;
+        grid-template-columns: repeat(8,1fr);
+        grid-template-rows: repeat(8,1fr);
+        background-color: rgb(117, 46, 26);
+    }
+    .italic{
+        grid-column:1/9;
+        grid-row: 1/5;
+        color: rgb(214, 161, 138)
+    }
+    .italic h1{
+        font-size: 350px;
+        font-style:italic;
+        line-height: 200px;
+        display: inline;
+    }
+    .italic h2{
+        font-size: 175px;
+        font-style:italic;
+        font-weight: normal;
+        display: inline;
+    }
+    .italic h3{
+        font-size: 75px;
+        font-style:italic;
+        font-weight: normal;
+        font-weight: bold;
+        display: inline-block;
+    }
+.regular{
+    grid-column: 1/9;
+    grid-row: 4/8;
+    text-align: right;
+    color: rgb(214, 161, 138)
+}
+.regular h1{
+    font-size: 360px;
+    font-weight: bold;
+    display: inline;
+
+}
+.regular h2{
+    font-size: 200px;
+    font-weight: normal;
+    display: inline;
+  
+}
+.regular h3{
+    font-size: 100px;
+    font-weight: normal;
+    display:inline;
+}
+
+
+
+
+.bodygrid{
+    display: grid;
+    grid-template-columns: repeat(8,1fr);
+    grid-template-rows: repeat(6,1fr);
+    gap: 1rem;
+}
+.long{
+    background-color: rgb(214, 161, 138);
+    grid-column:1/6;
+    grid-row:1/7;
+    padding:50px;
+    text-align:justify;
+    vertical-align :middle;
+}
+.short{
+    background-color: rgb(214, 161, 138);
+    grid-column:6/9;
+    grid-row:1/7;
+    padding:50px;
+}
+
+.contrastgrid{
+    display:grid;
+    grid-template-columns:repeat(8,1fr) ;
+    grid-template-rows: repeat(15,1fr) ;
+    gap: 1rem;
+}
+.socrates{
+    grid-column:2/4;
+    grid-row:2/4;
+}
+.socratesimg{
+    grid-column: 4/9;
+    grid-row:2/4;
+    object-fit: cover;
+}
+.socratesimg img{
+    position: absolute;
+ float: right;
+margin-top: -100px;
+}
+.socrates h3{
+    font-size: 24pt;
+    display:inline;
+}
+.aristotle{
+    grid-column:4/8;
+    grid-row:4/6;
+}
+.aristotleimg{
+    grid-column:1/4;
+    grid-row: 4/6;
+
+}
+.aristotleimg img{
+position: relative;
+float: left;
+margin-left: -1100px;
+margin-top: -100px;
+}
+.aristotle h2{
+    font-size: 48pt;
+    display: inline;
+}
+.aristotle h3{
+    font-size:24pt;
+}
+.aristotle p{
+    font-size: 20pt;
+    font-weight: normal;
+}
+.kant{
+    grid-column:2/7;
+    grid-row:6/8;
+    line-height: 25pt;
+}
+.kantimg{
+    grid-column:7/9;
+    grid-row:6/8;
+}
+.kantimg img{
+position: relative;
+float: right;
+margin-right: -1200px;
+margin-top:-100px;
+}
+.kant h2{
+    font-size: 48pt;
+    display:inline;
+
+}
+.kant span{
+    font-size: 24pt;
+    line-height: 25pt;
+}
+.kant p{
+    line-height: 25pt;
+}
+.rousseau{
+    grid-column: 5/8;
+    grid-row:8/11;
+    line-height: 30pt;
+}
+.rousseauimg{
+    grid-column: 1/5;
+    grid-row:8/11;
+
+}
+.rousseauimg img{
+position: absolute;
+float: left;
+margin-left: -800px;
+margin-top:-50px;
+}
+.rousseau h1{
+font-size: 64pt;
+font-weight: italic;
+display:inline;
+line-height: 30pt;
+}
+.rousseau h2{
+    font-size: 24pt;
+    font-weight: normal;
+    line-height: 30pt;
+    }
